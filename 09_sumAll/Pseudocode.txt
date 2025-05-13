@@ -1,0 +1,11 @@
+FOR arg in arguments DO
+    IF type of arg is not Number THEN
+        RETURN "ERROR"
+    ENDIF
+    ELSE
+    IF (arg < 0) THEN
+        RETURN "ERROR"
+    ENDIF
+    IF (floor(arg) !== arg) THEN
+        RETURN "ERROR"
+    ENDIF
