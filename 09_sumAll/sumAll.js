@@ -1,10 +1,12 @@
 const sumAll = function(num1, num2) {
-    // Return "ERROR" on non-integers, non-numbers, and negative numbers
+    // this sum function is not compatible with non-integer, 
+    // non-numeric, and negative number bounds. 
     for (arg of arguments) {
         if (typeof arg !== "number" || arg < 0 || 
             Math.floor(arg) !== arg)
             return "ERROR";
     }
+    
     // Swap if the first number is larger than the second
     if (num1 > num2) {
         const temp = num1;
